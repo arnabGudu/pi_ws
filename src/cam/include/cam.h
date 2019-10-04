@@ -24,6 +24,7 @@ private:
 	
 	void show();
 	void video();
+	void perform();
 };
 
 #endif

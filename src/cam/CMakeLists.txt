@@ -4,8 +4,8 @@ project(cam)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
-  cv_bridge
   image_transport
+  cv_bridge
 )
 
 find_package(OpenCV REQUIRED)

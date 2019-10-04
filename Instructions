@@ -1,0 +1,4 @@
+1. Could not find a package configuration file provided by "image_transport"
+
+Ans: apt-get install ros-kinetic-compressed-image-transport
+

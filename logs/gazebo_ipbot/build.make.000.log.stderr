@@ -1,0 +1,12 @@
+In file included from [01m[K/home/iarc/pi_ws/src/gazebo_ipbot/src/img_cap.cpp:1:0[m[K:
+[01m[K/home/iarc/pi_ws/src/gazebo_ipbot/include/img_cap.h:5:45:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.h: No such file or directory
+compilation terminated.
+In file included from [01m[K/home/iarc/pi_ws/src/gazebo_ipbot/src/img_cap_ard.cpp:1:0[m[K:
+[01m[K/home/iarc/pi_ws/src/gazebo_ipbot/include/img_cap.h:5:45:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.h: No such file or directory
+compilation terminated.
+make[2]: *** [CMakeFiles/img_cap_ard_lib.dir/src/img_cap_ard.cpp.o] Error 1
+make[1]: *** [CMakeFiles/img_cap_ard_lib.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/img_cap_lib.dir/src/img_cap.cpp.o] Error 1
+make[1]: *** [CMakeFiles/img_cap_lib.dir/all] Error 2
+make: *** [all] Error 2

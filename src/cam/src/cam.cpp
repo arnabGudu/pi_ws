@@ -14,7 +14,7 @@ cam::cam(int argc, char** argv, ros::NodeHandle _nh) : it(_nh), nh(_nh)
 void cam::callback(const sensor_msgs::ImageConstPtr& _msg)
 {
 	src = cv_bridge::toCvShare(_msg, "bgr8")->image;
-	show();
+	perform();
 	waitKey(10);
 }
 
@@ -27,14 +27,20 @@ void cam::video()
 		if (src.empty())
 			break;
 		
-		show();
+		perform();
 		if (waitKey(10) == ' ')
 			break;
 	}
 }
 
-void cam::show()
+void cam::perform()
 {
 	resize(src, src, Size(), .25, .25, CV_INTER_AREA);
+	cvtColor(src, src, CV_BGR2GRAY);
+	show();
+}
+
+void cam::show()
+{
 	imshow("src", src);
 }

@@ -1,0 +1,38 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  8%] Built target cmd_vel_lib
+[  8%] Built target std_msgs_generate_messages_nodejs
+[ 12%] [32mBuilding CXX object CMakeFiles/img_cap_ard_lib.dir/src/img_cap_ard.cpp.o[0m
+[ 12%] Built target _gazebo_ipbot_generate_messages_check_deps_tuning
+[ 12%] Built target _gazebo_ipbot_generate_messages_check_deps_pid
+[ 12%] Built target std_msgs_generate_messages_py
+[ 12%] Built target std_msgs_generate_messages_lisp
+[ 12%] Built target std_msgs_generate_messages_eus
+[ 16%] [32mBuilding CXX object CMakeFiles/img_cap_lib.dir/src/img_cap.cpp.o[0m
+[ 25%] Built target gazebo_ipbot_generate_messages_cpp
+[ 33%] Built target gazebo_ipbot_generate_messages_nodejs
+[ 45%] Built target gazebo_ipbot_generate_messages_py
+[ 54%] Built target gazebo_ipbot_generate_messages_lisp
+[35m[1mScanning dependencies of target cmd_vel[0m
+[ 66%] Built target gazebo_ipbot_generate_messages_eus
+[35m[1mScanning dependencies of target gazebo_ipbot_generate_messages[0m
+[ 66%] Built target gazebo_ipbot_generate_messages
+[ 70%] [32mBuilding CXX object CMakeFiles/cmd_vel.dir/src/cmd_vel_main.cpp.o[0m
+In file included from [01m[K/home/iarc/pi_ws/src/gazebo_ipbot/src/img_cap_ard.cpp:1:0[m[K:
+[01m[K/home/iarc/pi_ws/src/gazebo_ipbot/include/img_cap.h:5:45:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.h: No such file or directory
+compilation terminated.
+CMakeFiles/img_cap_ard_lib.dir/build.make:62: recipe for target 'CMakeFiles/img_cap_ard_lib.dir/src/img_cap_ard.cpp.o' failed
+make[2]: *** [CMakeFiles/img_cap_ard_lib.dir/src/img_cap_ard.cpp.o] Error 1
+CMakeFiles/Makefile2:947: recipe for target 'CMakeFiles/img_cap_ard_lib.dir/all' failed
+make[1]: *** [CMakeFiles/img_cap_ard_lib.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/iarc/pi_ws/src/gazebo_ipbot/src/img_cap.cpp:1:0[m[K:
+[01m[K/home/iarc/pi_ws/src/gazebo_ipbot/include/img_cap.h:5:45:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.h: No such file or directory
+compilation terminated.
+CMakeFiles/img_cap_lib.dir/build.make:62: recipe for target 'CMakeFiles/img_cap_lib.dir/src/img_cap.cpp.o' failed
+CMakeFiles/Makefile2:1579: recipe for target 'CMakeFiles/img_cap_lib.dir/all' failed
+make[2]: *** [CMakeFiles/img_cap_lib.dir/src/img_cap.cpp.o] Error 1
+make[1]: *** [CMakeFiles/img_cap_lib.dir/all] Error 2
+[ 75%] [32m[1mLinking CXX executable /home/iarc/pi_ws/devel/.private/gazebo_ipbot/lib/gazebo_ipbot/cmd_vel[0m
+[ 75%] Built target cmd_vel
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2

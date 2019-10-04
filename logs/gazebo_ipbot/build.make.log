@@ -1,0 +1,34 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  8%] Built target cmd_vel_lib
+[  8%] Built target std_msgs_generate_messages_nodejs
+[ 12%] [32mBuilding CXX object CMakeFiles/img_cap_ard_lib.dir/src/img_cap_ard.cpp.o[0m
+[ 12%] Built target _gazebo_ipbot_generate_messages_check_deps_pid
+[ 12%] Built target _gazebo_ipbot_generate_messages_check_deps_tuning
+[ 12%] Built target std_msgs_generate_messages_py
+[ 12%] Built target std_msgs_generate_messages_lisp
+[ 12%] Built target std_msgs_generate_messages_eus
+[ 20%] Built target gazebo_ipbot_generate_messages_cpp
+[ 29%] Built target gazebo_ipbot_generate_messages_nodejs
+[ 33%] [32mBuilding CXX object CMakeFiles/img_cap_lib.dir/src/img_cap.cpp.o[0m
+[ 41%] Built target gazebo_ipbot_generate_messages_lisp
+[ 54%] Built target gazebo_ipbot_generate_messages_py
+[ 66%] Built target gazebo_ipbot_generate_messages_eus
+[ 75%] Built target cmd_vel
+[ 75%] Built target gazebo_ipbot_generate_messages
+In file included from [01m[K/home/iarc/pi_ws/src/gazebo_ipbot/src/img_cap_ard.cpp:1:0[m[K:
+[01m[K/home/iarc/pi_ws/src/gazebo_ipbot/include/img_cap.h:5:45:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.h: No such file or directory
+compilation terminated.
+CMakeFiles/img_cap_ard_lib.dir/build.make:62: recipe for target 'CMakeFiles/img_cap_ard_lib.dir/src/img_cap_ard.cpp.o' failed
+make[2]: *** [CMakeFiles/img_cap_ard_lib.dir/src/img_cap_ard.cpp.o] Error 1
+make[1]: *** [CMakeFiles/img_cap_ard_lib.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+CMakeFiles/Makefile2:947: recipe for target 'CMakeFiles/img_cap_ard_lib.dir/all' failed
+In file included from [01m[K/home/iarc/pi_ws/src/gazebo_ipbot/src/img_cap.cpp:1:0[m[K:
+[01m[K/home/iarc/pi_ws/src/gazebo_ipbot/include/img_cap.h:5:45:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.h: No such file or directory
+compilation terminated.
+CMakeFiles/img_cap_lib.dir/build.make:62: recipe for target 'CMakeFiles/img_cap_lib.dir/src/img_cap.cpp.o' failed
+make[2]: *** [CMakeFiles/img_cap_lib.dir/src/img_cap.cpp.o] Error 1
+make[1]: *** [CMakeFiles/img_cap_lib.dir/all] Error 2
+CMakeFiles/Makefile2:1579: recipe for target 'CMakeFiles/img_cap_lib.dir/all' failed
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2
