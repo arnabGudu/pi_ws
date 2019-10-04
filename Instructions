@@ -2,3 +2,10 @@
 
 Ans: apt-get install ros-kinetic-compressed-image-transport
 
+2. For wiringPi errors
+
+Ans:	clone wiringPi from github
+	follow readme for setup
+	
+	visit for how to use: https://habr.com/ru/post/369679/
+
