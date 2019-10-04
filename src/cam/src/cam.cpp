@@ -35,5 +35,6 @@ void cam::video()
 
 void cam::show()
 {
+	resize(src, src, Size(), .25, .25, CV_INTER_AREA);
 	imshow("src", src);
 }
