@@ -1,6 +1,6 @@
+import rospy
 import wiringpi as wp
 import time
-import rospy
 
 INA1 = 20
 INA2 = 16
@@ -11,6 +11,7 @@ ENB = 13
 
 from std_msgs.msg import Int16 
 
+wiringPiSetupSys()
 wp.wiringPiSetupGpio()
 
 wp.pinMode(INA1, 1)

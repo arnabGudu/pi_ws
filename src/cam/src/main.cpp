@@ -1,9 +1,9 @@
-#include "img_cap.h"
+#include "cam.h"
 
 int main(int argc, char **argv)
 {
-	ros::init(argc, argv, "image");
+	ros::init(argc, argv, "cam");
 	ros::NodeHandle nh;
-	image img(nh);
+	cam c(argc, argv, nh);
 	ros::spin();
 }
