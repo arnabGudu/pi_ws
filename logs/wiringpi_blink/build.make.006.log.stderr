@@ -1,0 +1,9 @@
+/usr/local/lib/libwiringPi.so: undefined reference to `crypt'
+/usr/local/lib/libwiringPi.so: undefined reference to `pthread_join'
+/usr/local/lib/libwiringPi.so: undefined reference to `pthread_create'
+/usr/local/lib/libwiringPi.so: undefined reference to `shm_open'
+/usr/local/lib/libwiringPi.so: undefined reference to `pthread_cancel'
+collect2: error: ld returned 1 exit status
+make[2]: *** [fade_led] Error 1
+make[1]: *** [CMakeFiles/fade_led.dir/all] Error 2
+make: *** [all] Error 2

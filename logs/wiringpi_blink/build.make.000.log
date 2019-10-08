@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target blink_led[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/blink_led.dir/src/blink.cpp.o[0m
+[100%] [32m[1mLinking CXX executable blink_led[0m
+[100%] Built target blink_led

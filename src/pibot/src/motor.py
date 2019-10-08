@@ -9,11 +9,11 @@ io.setmode(io.BOARD)
 io.setup(EN, io.OUT, initial=io.LOW)
 io.setup(IN, io.OUT, initial=io.LOW)
 
-pwm = io.PWM(EN, 1000)		# set Frequece to 1KHz
+pwm = io.PWM(EN[1], 1000)		# set Frequece to 1KHz
 
 pwm.start(0)				# Start PWM output, Duty Cycle = 0
 
-io.output(IN, (io.HIGH, io.LOW, io.HIGH, io.LOW))
+io.output(IN, (io.HIGH, io.LOW, io.LOW, io.HIGH))
 
 try:
         while True:
@@ -27,7 +27,7 @@ try:
                 time.sleep(1)
 
 except KeyboardInterrupt:
-        p.stop()
+        pwm.stop()
         io.output(EN, io.LOW)
         io.output(IN, io.LOW)
         io.cleanup()

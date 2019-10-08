@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target fade_led[0m
+make[2]: *** No rule to make target '/home/iarc/pi_ws/src/wiringpi_blink/src/fade.cpp', needed by 'CMakeFiles/fade_led.dir/src/fade.cpp.o'.  Stop.
+CMakeFiles/Makefile2:259: recipe for target 'CMakeFiles/fade_led.dir/all' failed
+make[1]: *** [CMakeFiles/fade_led.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 50%] Built target blink_led
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2
