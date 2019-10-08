@@ -1,34 +1,39 @@
 import RPi.GPIO as io
-import time
+import rospy
+from std_msgs.msg import Int16 
 
 EN = [12, 33]
 IN = [16, 18, 29, 31]
 
 io.setmode(io.BOARD)
-
 io.setup(EN, io.OUT, initial=io.LOW)
 io.setup(IN, io.OUT, initial=io.LOW)
+io.output(IN, (io.HIGH, io.LOW, io.HIGH, io.LOW))
 
-pwm = io.PWM(EN[1], 1000)		# set Frequece to 1KHz
+en1 = io.PWM(EN[0], 1000)
+en1.start(0)	
+en2 = io.PWM(EN[1], 1000)
+en2.start(0)
 
-pwm.start(0)				# Start PWM output, Duty Cycle = 0
+def callback(data):
+	pwm.ChangeDutyCycle(50 + data)
+	pwm.ChangeDutyCycle(50 - data)
 
-io.output(IN, (io.HIGH, io.LOW, io.LOW, io.HIGH))
+def listener():
+	rospy.init_node('motor', anonymous = True)
+	rospy.Subscriber('speed', Int16, callback)
+	rospy.spin()
 
-try:
-        while True:
-                for dc in range(0, 101, 5):   # Increase duty cycle: 0~100
-                        pwm.ChangeDutyCycle(dc)     # Change duty cycle
-                        time.sleep(0.05)
-                time.sleep(1)
-                for dc in range(100, -1, -5): # Decrease duty cycle: 100~0
-                        pwm.ChangeDutyCycle(dc)
-                        time.sleep(0.05)
-                time.sleep(1)
+if __name__ == '__main__':
+	try:
+		listener()
 
-except KeyboardInterrupt:
-        pwm.stop()
-        io.output(EN, io.LOW)
-        io.output(IN, io.LOW)
-        io.cleanup()
+	except KeyboardInterrupt:
+		    en1.stop()
+		    en2.stop()
+		    io.output(EN, io.LOW)
+		    io.output(IN, io.LOW)
+		    io.cleanup()	
+			
+
 
