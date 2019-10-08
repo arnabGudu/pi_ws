@@ -15,8 +15,9 @@ include_directories(
 )
 
 LINK_DIRECTORIES("/usr/local/lib")
-add_executable(blink_led src/blink.cpp)
 
-target_link_libraries(blink_led
-	${catkin_LIBRARIES} wiringPi
-)
+add_executable(blink_led src/blink.cpp)
+target_link_libraries(blink_led	${catkin_LIBRARIES} wiringPi)
+
+add_executable(fade_led src/fade.cpp)
+target_link_libraries(fade_led	${catkin_LIBRARIES} wiringPi)
