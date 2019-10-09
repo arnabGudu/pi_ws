@@ -11,4 +11,4 @@ include_directories(
 )
 
 add_executable(motor src/motor.py)
-target_link_libraries(app ${catkin_LIBRARIES})
+target_link_libraries(motor ${catkin_LIBRARIES})
