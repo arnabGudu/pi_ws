@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC   -shared -Wl,-soname,libimg_cap_lib.so -o /home/iarc/pi_ws/devel/.private/gazebo_ipbot/lib/libimg_cap_lib.so CMakeFiles/img_cap_lib.dir/src/img_cap.cpp.o 

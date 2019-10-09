@@ -63,3 +63,6 @@ add_executable(pi_cam src/pi_cam/main.cpp)
 target_link_libraries(pi_cam pi_cam_lib ${OpenCV_LIBS} ${catkin_LIBRARIES} )
 add_dependencies(pi_cam pi_cam_lib pi_ipbot_generate_messages_cpp)
 
+catkin_install_python(PROGRAMS scripts/motor.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+

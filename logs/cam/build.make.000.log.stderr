@@ -1,6 +1,0 @@
-In file included from [01m[K/home/iarc/pi_ws/src/cam/src/cam.cpp:1:0[m[K:
-[01m[K/home/iarc/pi_ws/src/cam/include/cam.h:5:45:[m[K [01;31m[Kfatal error: [m[Kimage_transport/image_transport.h: No such file or directory
-compilation terminated.
-make[2]: *** [CMakeFiles/cam_lib.dir/src/cam.cpp.o] Error 1
-make[1]: *** [CMakeFiles/cam_lib.dir/all] Error 2
-make: *** [all] Error 2

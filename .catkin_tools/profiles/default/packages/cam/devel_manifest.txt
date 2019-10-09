@@ -1,7 +1,0 @@
-cam
-/home/iarc/pi_ws/devel/.private/cam/cmake.lock /home/iarc/pi_ws/devel/./cmake.lock
-/home/iarc/pi_ws/devel/.private/cam/share/cam/cmake/camConfig.cmake /home/iarc/pi_ws/devel/share/cam/cmake/camConfig.cmake
-/home/iarc/pi_ws/devel/.private/cam/share/cam/cmake/camConfig-version.cmake /home/iarc/pi_ws/devel/share/cam/cmake/camConfig-version.cmake
-/home/iarc/pi_ws/devel/.private/cam/lib/libcam_lib.so /home/iarc/pi_ws/devel/lib/libcam_lib.so
-/home/iarc/pi_ws/devel/.private/cam/lib/pkgconfig/cam.pc /home/iarc/pi_ws/devel/lib/pkgconfig/cam.pc
-/home/iarc/pi_ws/devel/.private/cam/lib/cam/cam /home/iarc/pi_ws/devel/lib/cam/cam

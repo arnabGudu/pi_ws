@@ -1,5 +1,0 @@
-Symlinking /home/iarc/pi_ws/devel/share/cam/cmake/camConfig.cmake
-Symlinking /home/iarc/pi_ws/devel/share/cam/cmake/camConfig-version.cmake
-Symlinking /home/iarc/pi_ws/devel/lib/libcam_lib.so
-Symlinking /home/iarc/pi_ws/devel/lib/pkgconfig/cam.pc
-Symlinking /home/iarc/pi_ws/devel/lib/cam/cam

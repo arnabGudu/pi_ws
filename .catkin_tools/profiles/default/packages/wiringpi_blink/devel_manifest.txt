@@ -1,2 +1,0 @@
-wiringpi_blink
-/home/iarc/pi_ws/devel/.private/wiringpi_blink/cmake.lock /home/iarc/pi_ws/devel/./cmake.lock

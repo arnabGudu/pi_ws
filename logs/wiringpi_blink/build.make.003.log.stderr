@@ -1,4 +1,0 @@
-make[2]: *** No rule to make target '/home/iarc/pi_ws/src/wiringpi_blink/src/fade.cpp', needed by 'CMakeFiles/fade_led.dir/src/fade.cpp.o'.  Stop.
-make[1]: *** [CMakeFiles/fade_led.dir/all] Error 2
-make[1]: *** Waiting for unfinished jobs....
-make: *** [all] Error 2
