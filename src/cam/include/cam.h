@@ -13,6 +13,7 @@ class cam
 {
 public:
 	cam(int argc, char** argv, ros::NodeHandle _nh);
+	cam(ros::NodeHandle _nh);
 	void callback(const sensor_msgs::ImageConstPtr& _msg);
 
 private:

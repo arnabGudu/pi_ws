@@ -9,17 +9,20 @@ using namespace std;
 class cam
 {
 public:
-	cam();
-	int process();
+	cam(int argc, char ** argv);
+	int process(int flag = 1);
+	
+protected:
+	void show(int);
+	Mat src;
+	VideoCapture cap;
+	int ht, error;
 	
 private:
-	Mat src, gray, thresh;
-	VideoCapture cap;
-
-	void show();
+	Mat gray, thresh;
 	void perform();
-	
-	int thres_low, area, ht, canny_thresh, error;
+	void trackbar();
+	int thresh_low, area, canny_thresh, flag;
 };
 
 #endif

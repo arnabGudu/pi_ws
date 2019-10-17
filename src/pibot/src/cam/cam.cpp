@@ -1,15 +1,31 @@
 #include "cam/cam.h"
 
-cam::cam()
+cam::cam(int argc, char ** argv)
 {	
 	error = 0;
-	thres_low = 55;
+	thresh_low = 200;	//55 for black
 	area = 100;
 	ht = 40;
-	cap.open(0);
+	
+	for (int i = 1; i < argc; i++)
+	{
+		if (argv[i][0] == 't')
+			trackbar();
+			
+		if (argv[i][0] == 's')
+			if (argv[i][1] != '\0')
+				flag = argv[i][1] - '0';
+			else
+				flag = 7;
+		
+		if (argv[i][0] == '~' || argv[i][0] == '/')
+			cap.open(argv[i]);
+		else
+			cap.open(1);
+	}
 }
 
-int cam::process()
+int cam::process(int flag)
 {
 	if (cap.isOpened())
 	{
@@ -19,16 +35,22 @@ int cam::process()
 		src = src(r);
 		
 		perform();
-		show();
+		show(flag);
 	}
 	return error;
+}
+
+void cam::trackbar()
+{	
+	namedWindow("thresh");
+	createTrackbar("low", "thresh", &thresh_low, 255, NULL);
 }
 
 void cam::perform()
 {
 	cvtColor(src, gray, CV_BGR2GRAY);
 	blur(src, src, Size(1, 1));
-	threshold(gray, thresh, thres_low, 255, THRESH_BINARY_INV);
+	threshold(gray, thresh, thresh_low, 255, THRESH_BINARY);
 
 	dilate(thresh, thresh, Mat(), Point(-1,-1), 2);
 	erode(thresh, thresh, Mat(), Point(-1,-1), 2);
@@ -78,8 +100,14 @@ void cam::perform()
 	line(src, Point(src.cols/2, 0), Point(src.cols/2, src.rows), Scalar(0, 0, 255), 2); 	
 }
 
-void cam::show()
+void cam::show(int x)
 {
-	imshow("src", src);
+	if (x & 1)
+		imshow("src", src);
+	if (x & 2)
+		imshow("gray", gray);
+	if (x & 4)
+		imshow("thresh", thresh);
 	waitKey(10);
 }
+
