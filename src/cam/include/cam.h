@@ -13,7 +13,7 @@ class cam
 {
 public:
 	cam(int argc, char** argv, ros::NodeHandle _nh);
-	cam(ros::NodeHandle _nh);
+	~cam();
 	void callback(const sensor_msgs::ImageConstPtr& _msg);
 
 private:
@@ -22,6 +22,7 @@ private:
 	image_transport::Subscriber sub;
 	
 	Mat src;
+	VideoCapture cap;
 	
 	void show();
 	void video();

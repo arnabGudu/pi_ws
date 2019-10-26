@@ -61,7 +61,6 @@ void lane::perform()
 	blur(hsv, hsv, Size(blur_size, blur_size));
 	
 	inRange(hsv, Scalar(h, s, v), Scalar(H, S, V), thresh);	
-	
 	Canny(thresh, canny, canny_low, canny_low * canny_ratio);
 		
 	hough();

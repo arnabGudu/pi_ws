@@ -10,10 +10,10 @@ class cam
 {
 public:
 	cam(int argc, char ** argv);
-	int process(int flag = 1);
+	int process();
 	
 protected:
-	void show(int);
+	void show();
 	Mat src;
 	VideoCapture cap;
 	int ht, error;

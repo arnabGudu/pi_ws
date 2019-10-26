@@ -7,25 +7,30 @@ cam::cam(int argc, char ** argv)
 	area = 100;
 	ht = 40;
 	
-	for (int i = 1; i < argc; i++)
+	if (argc == 1)
+		cap.open(1);
+	else
 	{
-		if (argv[i][0] == 't')
-			trackbar();
+		for (int i = 1; i < argc; i++)
+		{
+			if (argv[i][0] == 't')
+				trackbar();
 			
-		if (argv[i][0] == 's')
-			if (argv[i][1] != '\0')
-				flag = argv[i][1] - '0';
-			else
-				flag = 7;
+			if (argv[i][0] == 's')
+				if (argv[i][1] != '\0')
+					flag = argv[i][1] - '0';
+				else
+					flag = 7;
 		
-		if (argv[i][0] == '~' || argv[i][0] == '/')
-			cap.open(argv[i]);
-		else
-			cap.open(1);
+			if (argv[i][0] == '~' || argv[i][0] == '/')
+				cap.open(argv[i]);
+			else
+				cap.open(1);
+		}
 	}
 }
 
-int cam::process(int flag)
+int cam::process()
 {
 	if (cap.isOpened())
 	{
@@ -35,7 +40,7 @@ int cam::process(int flag)
 		src = src(r);
 		
 		perform();
-		show(flag);
+		show();
 	}
 	return error;
 }
@@ -100,13 +105,13 @@ void cam::perform()
 	line(src, Point(src.cols/2, 0), Point(src.cols/2, src.rows), Scalar(0, 0, 255), 2); 	
 }
 
-void cam::show(int x)
+void cam::show()
 {
-	if (x & 1)
+	if (flag & 1)
 		imshow("src", src);
-	if (x & 2)
+	if (flag & 2)
 		imshow("gray", gray);
-	if (x & 4)
+	if (flag & 4)
 		imshow("thresh", thresh);
 	waitKey(10);
 }

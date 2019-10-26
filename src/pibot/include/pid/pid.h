@@ -15,7 +15,7 @@ class pid
 public:
 	pid(ros::NodeHandle _nh);
 	void calc(int error);
-	void save(int , void *);
+	void save();
 
 private:
 	ros::NodeHandle nh;

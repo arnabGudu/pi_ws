@@ -4,6 +4,7 @@ project(pibot)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  roslib
 )
 
 find_package(

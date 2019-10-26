@@ -32,7 +32,7 @@ void pid::trackbar()
 	createTrackbar("save", "pid", &save_flag, 1, NULL);
 }
 
-void pid::save(int , void *)
+void pid::save()
 {
 	ofstream config(config_name.c_str());
 	config<<kp<<'\n';
@@ -44,6 +44,9 @@ void pid::save(int , void *)
 
 void pid::calc(int error)
 {
+	if (save_flag == 1)
+		save();
+	
 	int diff = error - lastError;
 	intg += error;
 	lastError = error;
