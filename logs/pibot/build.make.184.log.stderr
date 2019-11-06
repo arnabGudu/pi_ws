@@ -1,0 +1,14 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:3:1:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Kcam::cam(int, char**)[m[K’ does not match any in class ‘[01m[Kcam[m[K’
+ cam::cam(int argc, char ** argv)
+[01;32m[K ^[m[K
+In file included from [01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:1:0[m[K:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/cam/cam.h:9:7:[m[K [01;31m[Kerror: [m[Kcandidates are: cam::cam(const cam&)
+ class cam
+[01;32m[K       ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/include/cam/cam.h:12:2:[m[K [01;31m[Kerror: [m[K                cam::cam(int)
+  cam(int th_flag = 0);
+[01;32m[K  ^[m[K
+make[2]: *** [CMakeFiles/pibot_lib.dir/src/cam/cam.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
+make: *** [all] Error 2

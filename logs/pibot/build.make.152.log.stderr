@@ -1,0 +1,147 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:3:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kipm[m[K’ does not name a type
+ ipm::ipm(int argc, char** argv)
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:32:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kipm[m[K’ does not name a type
+ ipm::~ipm()
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kipm[m[K’ has not been declared
+ int ipm::process()
+[01;32m[K     ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K In function ‘[01m[Kint process()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:40:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+  if (cap.isOpened())
+[01;32m[K      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:42:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_factor[m[K’ was not declared in this scope
+   float f = size_factor * 0.01;
+[01;32m[K             ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:43:10:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc[m[K’ was not declared in this scope
+   cap >> src;
+[01;32m[K          ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:45:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kht[m[K’ was not declared in this scope
+   Rect r(0, ht, src.cols, src.rows - ht);
+[01;32m[K             ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:48:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kperform[m[K’ was not declared in this scope
+   perform();
+[01;32m[K           ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:49:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kshow[m[K’ was not declared in this scope
+   show();
+[01;32m[K        ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:51:9:[m[K [01;31m[Kerror: [m[Kcannot resolve overloaded function ‘[01m[Kerror[m[K’ based on conversion to type ‘[01m[Kint[m[K’
+  return error;
+[01;32m[K         ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K At global scope:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:54:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kipm[m[K’ has not been declared
+ void ipm::perform()
+[01;32m[K      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K In function ‘[01m[Kvoid perform()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:64:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kplot[m[K’ was not declared in this scope
+  plot();
+[01;32m[K       ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:65:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc_vert[m[K’ was not declared in this scope
+  Mat M = getPerspectiveTransform(src_vert, dst_vert);
+[01;32m[K                                  ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:65:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kdst_vert[m[K’ was not declared in this scope
+  Mat M = getPerspectiveTransform(src_vert, dst_vert);
+[01;32m[K                                            ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:67:18:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc[m[K’ was not declared in this scope
+  warpPerspective(src, dst, M, dst.size(), INTER_LINEAR, BORDER_CONSTANT);
+[01;32m[K                  ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K At global scope:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:70:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kipm[m[K’ has not been declared
+ void ipm::trackbar()
+[01;32m[K      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K In function ‘[01m[Kvoid trackbar()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:73:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kht[m[K’ was not declared in this scope
+  createTrackbar("ht", "src", &ht, 255, NULL);
+[01;32m[K                               ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:74:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_factor[m[K’ was not declared in this scope
+  createTrackbar("size", "src", &size_factor, 100, NULL);
+[01;32m[K                                 ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:77:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kh[m[K’ was not declared in this scope
+  createTrackbar("h", "thresh", &h, 255, NULL);
+[01;32m[K                                 ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:78:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ks[m[K’ was not declared in this scope
+  createTrackbar("s", "thresh", &s, 255, NULL);
+[01;32m[K                                 ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:79:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kv[m[K’ was not declared in this scope
+  createTrackbar("v", "thresh", &v, 255, NULL);
+[01;32m[K                                 ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:80:33:[m[K [01;31m[Kerror: [m[K‘[01m[KH[m[K’ was not declared in this scope
+  createTrackbar("H", "thresh", &H, 255, NULL);
+[01;32m[K                                 ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:81:33:[m[K [01;31m[Kerror: [m[K‘[01m[KS[m[K’ was not declared in this scope
+  createTrackbar("S", "thresh", &S, 255, NULL);
+[01;32m[K                                 ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:82:33:[m[K [01;31m[Kerror: [m[K‘[01m[KV[m[K’ was not declared in this scope
+  createTrackbar("V", "thresh", &V, 255, NULL);
+[01;32m[K                                 ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:83:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kblur_size[m[K’ was not declared in this scope
+  createTrackbar("blr", "thresh", &blur_size, 5, NULL);
+[01;32m[K                                   ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:86:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kcanny_low[m[K’ was not declared in this scope
+  createTrackbar("canny_low", "canny", &canny_low, 255, NULL);
+[01;32m[K                                        ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:87:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kcanny_ratio[m[K’ was not declared in this scope
+  createTrackbar("canny_ratio", "canny", &canny_ratio, 5, NULL);
+[01;32m[K                                          ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K At global scope:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:90:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kipm[m[K’ has not been declared
+ void ipm::plot()
+[01;32m[K      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K In function ‘[01m[Kvoid plot()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:92:2:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc_vert[m[K’ was not declared in this scope
+  src_vert[0] = Point(x1, y1);
+[01;32m[K  ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:92:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kx1[m[K’ was not declared in this scope
+  src_vert[0] = Point(x1, y1);
+[01;32m[K                      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:93:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kx2[m[K’ was not declared in this scope
+  src_vert[1] = Point(x2, y1);
+[01;32m[K                      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:94:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kx4[m[K’ was not declared in this scope
+  src_vert[2] = Point(x4, y2);
+[01;32m[K                      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:94:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ky2[m[K’ was not declared in this scope
+  src_vert[2] = Point(x4, y2);
+[01;32m[K                          ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:95:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kx3[m[K’ was not declared in this scope
+  src_vert[3] = Point(x3, y2);
+[01;32m[K                      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:97:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kdst_vert[m[K’ was not declared in this scope
+  dst_vert[0] = Point(0, 0);
+[01;32m[K  ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:102:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc[m[K’ was not declared in this scope
+  line(src, Point(x1, y1), Point(x2, y1), Scalar(0,0,255), 2);
+[01;32m[K       ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K At global scope:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:112:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kipm[m[K’ has not been declared
+ void ipm::show()
+[01;32m[K      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K In function ‘[01m[Kvoid show()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:114:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ was not declared in this scope
+  if (flag & 1)
+[01;32m[K      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:115:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc[m[K’ was not declared in this scope
+   imshow("src", src);
+[01;32m[K                 ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:116:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ was not declared in this scope
+  if (flag & 2)
+[01;32m[K      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:117:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kthresh[m[K’ was not declared in this scope
+   imshow("thresh", thresh);
+[01;32m[K                    ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:118:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ was not declared in this scope
+  if (flag & 4)
+[01;32m[K      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:119:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kcanny[m[K’ was not declared in this scope
+   imshow("canny", canny);
+[01;32m[K                   ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:120:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ was not declared in this scope
+  if (flag & 8)
+[01;32m[K      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:121:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kdst[m[K’ was not declared in this scope
+   imshow("dst", dst);
+[01;32m[K                 ^[m[K
+make[2]: *** [CMakeFiles/pibot_ipm_lib.dir/src/lane_ipm/lane_ipm.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_ipm_lib.dir/all] Error 2
+make: *** [all] Error 2

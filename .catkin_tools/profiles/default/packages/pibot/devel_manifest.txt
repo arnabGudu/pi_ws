@@ -1,0 +1,12 @@
+pibot
+/home/lucifer/pi_ws/devel/.private/pibot/cmake.lock /home/lucifer/pi_ws/devel/./cmake.lock
+/home/lucifer/pi_ws/devel/.private/pibot/share/pibot/cmake/pibotConfig-version.cmake /home/lucifer/pi_ws/devel/share/pibot/cmake/pibotConfig-version.cmake
+/home/lucifer/pi_ws/devel/.private/pibot/share/pibot/cmake/pibotConfig.cmake /home/lucifer/pi_ws/devel/share/pibot/cmake/pibotConfig.cmake
+/home/lucifer/pi_ws/devel/.private/pibot/lib/libpibot_ipm_lib.so /home/lucifer/pi_ws/devel/lib/libpibot_ipm_lib.so
+/home/lucifer/pi_ws/devel/.private/pibot/lib/libpibot_hl_lib.so /home/lucifer/pi_ws/devel/lib/libpibot_hl_lib.so
+/home/lucifer/pi_ws/devel/.private/pibot/lib/libpibot_lib.so /home/lucifer/pi_ws/devel/lib/libpibot_lib.so
+/home/lucifer/pi_ws/devel/.private/pibot/lib/pkgconfig/pibot.pc /home/lucifer/pi_ws/devel/lib/pkgconfig/pibot.pc
+/home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot_ipm /home/lucifer/pi_ws/devel/lib/pibot/pibot_ipm
+/home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot /home/lucifer/pi_ws/devel/lib/pibot/pibot
+/home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot_hl /home/lucifer/pi_ws/devel/lib/pibot/pibot_hl
+/home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot_pw /home/lucifer/pi_ws/devel/lib/pibot/pibot_pw

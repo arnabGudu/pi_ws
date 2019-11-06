@@ -1,0 +1,10 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:[m[K In constructor ‘[01m[Kcam::cam(int, char**)[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ was not declared in this scope
+     flag = argv[i][1] - '0';
+[01;32m[K     ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:19:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ was not declared in this scope
+     flag = 7;
+[01;32m[K     ^[m[K
+make[2]: *** [CMakeFiles/pibot_lib.dir/src/cam/cam.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,14 @@
+/home/lucifer/pi_ws/devel/.private/pibot/lib/libpibot_lib.so: undefined reference to `ros::package::getPath(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/home/lucifer/pi_ws/devel/.private/pibot/lib/libpibot_lib.so: undefined reference to `ros::package::getPath(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+collect2: error: ld returned 1 exit status
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot_hl] Error 1
+make[2]: *** [/home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot_ipm] Error 1
+make[1]: *** [CMakeFiles/pibot_hl.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/pibot_ipm.dir/all] Error 2
+/home/lucifer/pi_ws/devel/.private/pibot/lib/libpibot_lib.so: undefined reference to `ros::package::getPath(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot] Error 1
+make[1]: *** [CMakeFiles/pibot.dir/all] Error 2
+make: *** [all] Error 2

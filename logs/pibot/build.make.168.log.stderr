@@ -1,0 +1,24 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:[m[K In member function ‘[01m[Kvoid pid::trackbar()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:27:19:[m[K [01;31m[Kerror: [m[K‘[01m[KnamedWindow[m[K’ was not declared in this scope
+  namedWindow("pid");
+[01;32m[K                   ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:27:19:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:65:0[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/include/pid/pid.h:8[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/highgui.hpp:305:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::namedWindow[m[K’
+ CV_EXPORTS_W void namedWindow(const String& winname, int flags = WINDOW_AUTOSIZE);
+[01;32m[K                   ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:28:44:[m[K [01;31m[Kerror: [m[K‘[01m[KcreateTrackbar[m[K’ was not declared in this scope
+  createTrackbar("kp", "pid", &kp, 100, NULL);
+[01;32m[K                                            ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:28:44:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:65:0[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/include/pid/pid.h:8[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/highgui.hpp:541:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::createTrackbar[m[K’
+ CV_EXPORTS int createTrackbar(const String& trackbarname, const String& winname,
+[01;32m[K                ^[m[K
+make[2]: *** [CMakeFiles/pibot_lib.dir/src/pid/pid.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
+make: *** [all] Error 2

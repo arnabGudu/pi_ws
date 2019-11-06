@@ -1,0 +1,10 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:16:5:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Kint lane::process(int)[m[K’ does not match any in class ‘[01m[Klane[m[K’
+ int lane::process(int flag)
+[01;32m[K     ^[m[K
+In file included from [01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:1:0[m[K:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/lane_hl/lane_hl.h:13:7:[m[K [01;31m[Kerror: [m[Kcandidate is: void lane::process(int)
+  void process(int flag = 1);
+[01;32m[K       ^[m[K
+make[2]: *** [CMakeFiles/pibot_hl_lib.dir/src/lane_hl/lane_hl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_hl_lib.dir/all] Error 2
+make: *** [all] Error 2

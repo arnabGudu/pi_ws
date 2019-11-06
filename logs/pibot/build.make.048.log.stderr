@@ -1,0 +1,7 @@
+CMakeFiles/pibot_hl.dir/src/lane_hl/main.cpp.o: In function `main':
+main.cpp:(.text+0x184): undefined reference to `cam::process(int)'
+/home/lucifer/pi_ws/devel/.private/pibot/lib/libpibot_hl_lib.so: undefined reference to `cam::cam(int)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot_hl] Error 1
+make[1]: *** [CMakeFiles/pibot_hl.dir/all] Error 2
+make: *** [all] Error 2

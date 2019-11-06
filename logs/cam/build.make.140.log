@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target cam_lib[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/cam_lib.dir/src/cam.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/lucifer/pi_ws/devel/.private/cam/lib/libcam_lib.so[0m
+[ 50%] Built target cam_lib
+[ 75%] [32m[1mLinking CXX executable /home/lucifer/pi_ws/devel/.private/cam/lib/cam/cam[0m
+[100%] Built target cam

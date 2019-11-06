@@ -1,0 +1,7 @@
+[01m[K/home/lucifer/pi_ws/src/cam/src/cam.cpp:[m[K In constructor ‘[01m[Kcam::cam(int, char**, ros::NodeHandle)[m[K’:
+[01m[K/home/lucifer/pi_ws/src/cam/src/cam.cpp:13:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+   else if (argv[i][0] == '/')
+[01;32m[K   ^[m[K
+make[2]: *** [CMakeFiles/cam_lib.dir/src/cam.cpp.o] Error 1
+make[1]: *** [CMakeFiles/cam_lib.dir/all] Error 2
+make: *** [all] Error 2

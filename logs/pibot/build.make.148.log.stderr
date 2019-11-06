@@ -1,0 +1,104 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:5:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kint y1[m[K’ redeclared as different kind of symbol
+ int y1 = 240, y2 = 330;
+[01;32m[K     ^[m[K
+In file included from [01m[K/usr/include/features.h:367:0[m[K,
+                 from [01m[K/usr/include/limits.h:25[m[K,
+                 from [01m[K/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h:168[m[K,
+                 from [01m[K/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h:7[m[K,
+                 from [01m[K/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h:34[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/cvdef.h:90[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core.hpp:52[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:251:1:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kdouble y1(double)[m[K’
+ __MATHCALL (y1,, (_Mdouble_));
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:[m[K In function ‘[01m[Kvoid plot()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:10:2:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc_vertices[m[K’ was not declared in this scope
+  src_vertices[0] = Point(x1, y1);
+[01;32m[K  ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:10:32:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kdouble (*)(double) throw ()[m[K’ to ‘[01m[Kint[m[K’ [-fpermissive]
+  src_vertices[0] = Point(x1, y1);
+[01;32m[K                                ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core.hpp:58:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/types.hpp:1153:1:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kcv::Point_<_Tp>::Point_(_Tp, _Tp) [with _Tp = int][m[K’
+ Point_<_Tp>::Point_(_Tp _x, _Tp _y)
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:11:32:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kdouble (*)(double) throw ()[m[K’ to ‘[01m[Kint[m[K’ [-fpermissive]
+  src_vertices[1] = Point(x2, y1);
+[01;32m[K                                ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core.hpp:58:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/types.hpp:1153:1:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kcv::Point_<_Tp>::Point_(_Tp, _Tp) [with _Tp = int][m[K’
+ Point_<_Tp>::Point_(_Tp _x, _Tp _y)
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:15:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kdst_vertices[m[K’ was not declared in this scope
+  dst_vertices[0] = Point(0, 0);
+[01;32m[K  ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:20:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrc[m[K’ was not declared in this scope
+  line(src, Point(x1, y1), Point(x2, y1), Scalar(0,0,255), 2);
+[01;32m[K       ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:20:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kdouble (*)(double) throw ()[m[K’ to ‘[01m[Kint[m[K’ [-fpermissive]
+  line(src, Point(x1, y1), Point(x2, y1), Scalar(0,0,255), 2);
+[01;32m[K                        ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core.hpp:58:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/types.hpp:1153:1:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kcv::Point_<_Tp>::Point_(_Tp, _Tp) [with _Tp = int][m[K’
+ Point_<_Tp>::Point_(_Tp _x, _Tp _y)
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:20:39:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kdouble (*)(double) throw ()[m[K’ to ‘[01m[Kint[m[K’ [-fpermissive]
+  line(src, Point(x1, y1), Point(x2, y1), Scalar(0,0,255), 2);
+[01;32m[K                                       ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core.hpp:58:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/types.hpp:1153:1:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kcv::Point_<_Tp>::Point_(_Tp, _Tp) [with _Tp = int][m[K’
+ Point_<_Tp>::Point_(_Tp _x, _Tp _y)
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:22:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kdouble (*)(double) throw ()[m[K’ to ‘[01m[Kint[m[K’ [-fpermissive]
+  line(src, Point(x1, y1), Point(x3, y2), Scalar(0,0,255), 2);
+[01;32m[K                        ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core.hpp:58:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/types.hpp:1153:1:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kcv::Point_<_Tp>::Point_(_Tp, _Tp) [with _Tp = int][m[K’
+ Point_<_Tp>::Point_(_Tp _x, _Tp _y)
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:23:24:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kdouble (*)(double) throw ()[m[K’ to ‘[01m[Kint[m[K’ [-fpermissive]
+  line(src, Point(x2, y1), Point(x4, y2), Scalar(0,0,255), 2);
+[01;32m[K                        ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core.hpp:58:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/types.hpp:1153:1:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kcv::Point_<_Tp>::Point_(_Tp, _Tp) [with _Tp = int][m[K’
+ Point_<_Tp>::Point_(_Tp _x, _Tp _y)
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:24:26:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kdouble (*)(double) throw ()[m[K’ to ‘[01m[Kint[m[K’ [-fpermissive]
+  circle(src, Point(x1, y1), 1, Scalar(0, 255, 0), 2);
+[01;32m[K                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core.hpp:58:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/types.hpp:1153:1:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kcv::Point_<_Tp>::Point_(_Tp, _Tp) [with _Tp = int][m[K’
+ Point_<_Tp>::Point_(_Tp _x, _Tp _y)
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:25:26:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kdouble (*)(double) throw ()[m[K’ to ‘[01m[Kint[m[K’ [-fpermissive]
+  circle(src, Point(x2, y1), 1, Scalar(0, 255, 0), 2);
+[01;32m[K                          ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core.hpp:58:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/core/types.hpp:1153:1:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kcv::Point_<_Tp>::Point_(_Tp, _Tp) [with _Tp = int][m[K’
+ Point_<_Tp>::Point_(_Tp _x, _Tp _y)
+[01;32m[K ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:[m[K In function ‘[01m[Kvoid trackbar(cv::Mat)[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:33:58:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble (*)(double) throw ()[m[K’ to ‘[01m[Kint*[m[K’ for argument ‘[01m[K3[m[K’ to ‘[01m[Kint cv::createTrackbar(const cv::String&, const cv::String&, int*, int, cv::TrackbarCallback, void*)[m[K’
+  createTrackbar("y1", "src", &y1, src.size().height, NULL);
+[01;32m[K                                                          ^[m[K
+make[2]: *** [CMakeFiles/pibot_pw.dir/src/Test/pros_wrap.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_pw.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,14 @@
+[35m[1mScanning dependencies of target pibot_lib[0m
+[ 14%] Built target pibot_ipm_lib
+[ 35%] Built target pibot_hl_lib
+[ 42%] [32mBuilding CXX object CMakeFiles/pibot_lib.dir/src/cam/cam.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/lucifer/pi_ws/devel/.private/pibot/lib/libpibot_lib.so[0m
+[ 57%] Built target pibot_lib
+[35m[1mScanning dependencies of target pibot[0m
+[ 64%] [32m[1mLinking CXX executable /home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot_ipm[0m
+[ 71%] [32m[1mLinking CXX executable /home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot_hl[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/pibot.dir/src/cam/main.cpp.o[0m
+[ 85%] Built target pibot_hl
+[ 92%] Built target pibot_ipm
+[100%] [32m[1mLinking CXX executable /home/lucifer/pi_ws/devel/.private/pibot/lib/pibot/pibot[0m
+[100%] Built target pibot

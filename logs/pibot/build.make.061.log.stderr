@@ -1,0 +1,13 @@
+In file included from [01m[K/home/lucifer/pi_ws/src/pibot/include/lane_hl/lane_hl.h:4:0[m[K,
+                 from [01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:1[m[K:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/cam/cam.h:[m[K In member function ‘[01m[Kint lane::process(int)[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/cam/cam.h:25:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kint cam::error[m[K’ is private
+  int thresh_low, area, canny_thresh, error;
+[01;32m[K                                      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:28:9:[m[K [01;31m[Kerror: [m[Kwithin this context
+  return error;
+[01;32m[K         ^[m[K
+make[2]: *** [CMakeFiles/pibot_hl_lib.dir/src/lane_hl/lane_hl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_hl_lib.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

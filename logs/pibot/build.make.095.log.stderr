@@ -1,0 +1,7 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/hough.cpp:[m[K In member function ‘[01m[Kvoid lane::hough()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/hough.cpp:7:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K[[m[K’ token
+  float[] slopes;
+[01;32m[K       ^[m[K
+make[2]: *** [CMakeFiles/pibot_hl_lib.dir/src/lane_hl/hough.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_hl_lib.dir/all] Error 2
+make: *** [all] Error 2

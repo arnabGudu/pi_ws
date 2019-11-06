@@ -1,0 +1,14 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/hough.cpp:[m[K In member function ‘[01m[Kvoid lane::hough()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/hough.cpp:6:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kthr[m[K’ was not declared in this scope
+  HoughLinesP(canny, lines, 1, CV_PI/180, thr, min_len, max_gap);
+[01;32m[K                                          ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/hough.cpp:6:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_len[m[K’ was not declared in this scope
+  HoughLinesP(canny, lines, 1, CV_PI/180, thr, min_len, max_gap);
+[01;32m[K                                               ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/hough.cpp:6:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_gap[m[K’ was not declared in this scope
+  HoughLinesP(canny, lines, 1, CV_PI/180, thr, min_len, max_gap);
+[01;32m[K                                                        ^[m[K
+make[2]: *** [CMakeFiles/pibot_hl_lib.dir/src/lane_hl/hough.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/pibot_hl_lib.dir/all] Error 2
+make: *** [all] Error 2

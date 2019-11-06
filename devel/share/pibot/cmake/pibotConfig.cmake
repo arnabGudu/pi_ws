@@ -1,0 +1,1 @@
+/home/lucifer/pi_ws/devel/.private/pibot/share/pibot/cmake/pibotConfig.cmake

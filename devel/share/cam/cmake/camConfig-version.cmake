@@ -1,0 +1,1 @@
+/home/lucifer/pi_ws/devel/.private/cam/share/cam/cmake/camConfig-version.cmake

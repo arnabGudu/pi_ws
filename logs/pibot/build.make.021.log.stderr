@@ -1,0 +1,16 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/main.cpp:1:21:[m[K [01;31m[Kfatal error: [m[Klane_hl.h: No such file or directory
+compilation terminated.
+make[2]: *** [CMakeFiles/pibot_hl.dir/src/lane_hl/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_hl.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:[m[K In member function ‘[01m[Kvoid lane::perform()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:25:8:[m[K [01;31m[Kerror: [m[K‘[01m[Khough[m[K’ was not declared in this scope
+  hough();
+[01;32m[K        ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:[m[K At global scope:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:30:18:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kvoid lane::hough()[m[K’ member function declared in class ‘[01m[Klane[m[K’
+ void lane::hough()
+[01;32m[K                  ^[m[K
+make[2]: *** [CMakeFiles/pibot_hl_lib.dir/src/lane_hl/lane_hl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_hl_lib.dir/all] Error 2
+make: *** [all] Error 2

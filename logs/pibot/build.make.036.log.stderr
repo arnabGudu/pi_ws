@@ -1,0 +1,11 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:3:25:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 1 of ‘[01m[Kcam::cam(int)[m[K’ [-fpermissive]
+ cam::cam(int th_flag = 0)
+[01;32m[K                         ^[m[K
+In file included from [01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:1:0[m[K:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/cam/cam.h:12:2:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kcam::cam(int)[m[K’ here
+  cam(int th_flag = 0);
+[01;32m[K  ^[m[K
+make[2]: *** [CMakeFiles/pibot_lib.dir/src/cam/cam.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

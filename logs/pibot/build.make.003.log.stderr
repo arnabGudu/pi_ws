@@ -1,0 +1,6 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:30:20:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kvoid cam::trackbar()[m[K’ member function declared in class ‘[01m[Kcam[m[K’
+ void cam::trackbar()
+[01;32m[K                    ^[m[K
+make[2]: *** [CMakeFiles/pibot_lib.dir/src/cam/cam.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
+make: *** [all] Error 2

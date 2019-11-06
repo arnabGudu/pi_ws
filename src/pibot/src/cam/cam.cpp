@@ -8,7 +8,7 @@ cam::cam(int argc, char ** argv)
 	ht = 40;
 	
 	if (argc == 1)
-		cap.open(1);
+		cap.open(0);
 	else
 	{
 		for (int i = 1; i < argc; i++)
@@ -25,7 +25,7 @@ cam::cam(int argc, char ** argv)
 			if (argv[i][0] == '~' || argv[i][0] == '/')
 				cap.open(argv[i]);
 			else
-				cap.open(1);
+				cap.open(0);
 		}
 	}
 }

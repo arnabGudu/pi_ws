@@ -1,0 +1,30 @@
+In file included from [01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:1:0[m[K:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/lane_hl/lane_hl.h:13:2:[m[K [01;31m[Kerror: [m[Kdeclaration does not declare anything [-fpermissive]
+  lane;
+[01;32m[K  ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:3:1:[m[K [01;31m[Kerror: [m[K‘[01m[Klane::lane[m[K’ names the constructor, not the type
+ lane::lane
+[01;32m[K ^[m[K
+make[2]: *** [CMakeFiles/pibot_hl_lib.dir/src/lane_hl/lane_hl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_hl_lib.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/main.cpp:1:0[m[K:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/lane_hl/lane_hl.h:13:2:[m[K [01;31m[Kerror: [m[Kdeclaration does not declare anything [-fpermissive]
+  lane;
+[01;32m[K  ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/main.cpp:10:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Klane::lane()[m[K’
+  lane l;
+[01;32m[K       ^[m[K
+In file included from [01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/main.cpp:1:0[m[K:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/lane_hl/lane_hl.h:12:2:[m[K [01;36m[Knote: [m[Kcandidate: lane::lane(int)
+  lane(int);
+[01;32m[K  ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/include/lane_hl/lane_hl.h:12:2:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/lucifer/pi_ws/src/pibot/include/lane_hl/lane_hl.h:9:7:[m[K [01;36m[Knote: [m[Kcandidate: lane::lane(const lane&)
+ class lane : public cam  //**inheritance of cam class as public
+[01;32m[K       ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/include/lane_hl/lane_hl.h:9:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/pibot_hl.dir/src/lane_hl/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_hl.dir/all] Error 2
+make: *** [all] Error 2

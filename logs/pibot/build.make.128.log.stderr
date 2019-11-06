@@ -1,0 +1,7 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/Test/pros_wrap.cpp:10:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct cv::MatSize[m[K’ has no member named ‘[01m[Kwidth[m[K’
+     createTrackbar("y1", "src", &y1, src.size.width, NULL);
+[01;32m[K                                               ^[m[K
+make[2]: *** [CMakeFiles/pibot_pw.dir/src/Test/pros_wrap.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_pw.dir/all] Error 2
+make: *** [all] Error 2

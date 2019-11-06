@@ -1,0 +1,15 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/main.cpp:1:21:[m[K [01;31m[Kfatal error: [m[Klane_hl.h: No such file or directory
+compilation terminated.
+make[2]: *** [CMakeFiles/pibot_hl.dir/src/lane_hl/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_hl.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:16:6:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Kvoid lane::perform()[m[K’ does not match any in class ‘[01m[Klane[m[K’
+ void lane::perform()
+[01;32m[K      ^[m[K
+In file included from [01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:1:0[m[K:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/lane_hl/lane_hl.h:19:6:[m[K [01;31m[Kerror: [m[Kcandidate is: cv::Mat lane::perform()
+  Mat perform();   //**inherited function overloading**
+[01;32m[K      ^[m[K
+make[2]: *** [CMakeFiles/pibot_hl_lib.dir/src/lane_hl/lane_hl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_hl_lib.dir/all] Error 2
+make: *** [all] Error 2

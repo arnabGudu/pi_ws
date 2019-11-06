@@ -1,0 +1,11 @@
+In file included from [01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:1:0[m[K:
+[01m[K/home/lucifer/pi_ws/src/pibot/include/pid/pid.h:18:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  void save(int , void *)
+[01;32m[K                        ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:[m[K In member function ‘[01m[Kvoid pid::trackbar()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:33:51:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function
+  createTrackbar("save", "pid", &save_flag, 1, save);
+[01;32m[K                                                   ^[m[K
+make[2]: *** [CMakeFiles/pibot_lib.dir/src/pid/pid.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
+make: *** [all] Error 2

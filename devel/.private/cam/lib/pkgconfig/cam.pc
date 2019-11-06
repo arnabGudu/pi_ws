@@ -1,0 +1,8 @@
+prefix=/home/lucifer/pi_ws/devel/.private/cam
+
+Name: cam
+Description: Description of cam
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/lucifer/pi_ws/devel/.private/cam/lib 
+Requires: 

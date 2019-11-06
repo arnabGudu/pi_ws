@@ -1,0 +1,14 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:[m[K In constructor ‘[01m[Kpid::pid(ros::NodeHandle)[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:12:11:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrackbar[m[K’ was not declared in this scope
+  trackbar();
+[01;32m[K           ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:[m[K At global scope:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:25:20:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kvoid pid::trackbar()[m[K’ member function declared in class ‘[01m[Kpid[m[K’
+ void pid::trackbar()
+[01;32m[K                    ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:35:16:[m[K [01;31m[Kerror: [m[Kno ‘[01m[Kvoid pid::save()[m[K’ member function declared in class ‘[01m[Kpid[m[K’
+ void pid::save()
+[01;32m[K                ^[m[K
+make[2]: *** [CMakeFiles/pibot_lib.dir/src/pid/pid.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,13 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:[m[K In constructor ‘[01m[Kcam::cam()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:11:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knamedwindow[m[K’ was not declared in this scope
+  namedwindow("thresh");
+[01;32m[K                      ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:12:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kthresh_low[m[K’ was not declared in this scope
+  createTrackbar("low", "thresh", &thresh_low, NULL);
+[01;32m[K                                   ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/cam/cam.cpp:13:53:[m[K [01;35m[Kwarning: [m[Kpassing NULL to non-pointer argument 4 of ‘[01m[Kint cv::createTrackbar(const cv::String&, const cv::String&, int*, int, cv::TrackbarCallback, void*)[m[K’ [-Wconversion-null]
+  createTrackbar("high", "thresh", &thresh_high, NULL);
+[01;32m[K                                                     ^[m[K
+make[2]: *** [CMakeFiles/pibot_lib.dir/src/cam/cam.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
+make: *** [all] Error 2

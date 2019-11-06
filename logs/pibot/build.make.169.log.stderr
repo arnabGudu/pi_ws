@@ -1,0 +1,19 @@
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:[m[K In member function ‘[01m[Kvoid pid::trackbar()[m[K’:
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:28:44:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat*[m[K’ to ‘[01m[Kint*[m[K’ for argument ‘[01m[K3[m[K’ to ‘[01m[Kint cv::createTrackbar(const cv::String&, const cv::String&, int*, int, cv::TrackbarCallback, void*)[m[K’
+  createTrackbar("kp", "pid", &kp, 100, NULL);
+[01;32m[K                                            ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:29:44:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat*[m[K’ to ‘[01m[Kint*[m[K’ for argument ‘[01m[K3[m[K’ to ‘[01m[Kint cv::createTrackbar(const cv::String&, const cv::String&, int*, int, cv::TrackbarCallback, void*)[m[K’
+  createTrackbar("kd", "pid", &kd, 100, NULL);
+[01;32m[K                                            ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:30:44:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat*[m[K’ to ‘[01m[Kint*[m[K’ for argument ‘[01m[K3[m[K’ to ‘[01m[Kint cv::createTrackbar(const cv::String&, const cv::String&, int*, int, cv::TrackbarCallback, void*)[m[K’
+  createTrackbar("ki", "pid", &ki, 100, NULL);
+[01;32m[K                                            ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:31:44:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat*[m[K’ to ‘[01m[Kint*[m[K’ for argument ‘[01m[K3[m[K’ to ‘[01m[Kint cv::createTrackbar(const cv::String&, const cv::String&, int*, int, cv::TrackbarCallback, void*)[m[K’
+  createTrackbar("sp", "pid", &sp, 100, NULL);
+[01;32m[K                                            ^[m[K
+[01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:32:53:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+  createTrackbar("save", "pid", &save_flag, 1, save());
+[01;32m[K                                                     ^[m[K
+make[2]: *** [CMakeFiles/pibot_lib.dir/src/pid/pid.cpp.o] Error 1
+make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
+make: *** [all] Error 2
