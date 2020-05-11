@@ -1,7 +1,0 @@
-[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:[m[K In member function ‘[01m[Kvoid ipm::show()[m[K’:
-[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_ipm/lane_ipm.cpp:121:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kdst[m[K’ was not declared in this scope
-   imshow("dst", dst);
-[01;32m[K                 ^[m[K
-make[2]: *** [CMakeFiles/pibot_ipm_lib.dir/src/lane_ipm/lane_ipm.cpp.o] Error 1
-make[1]: *** [CMakeFiles/pibot_ipm_lib.dir/all] Error 2
-make: *** [all] Error 2

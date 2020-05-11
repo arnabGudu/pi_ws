@@ -1,8 +1,0 @@
-prefix=/home/lucifer/pi_ws/install
-
-Name: pibot
-Description: Description of pibot
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/lucifer/pi_ws/install/lib 
-Requires: 

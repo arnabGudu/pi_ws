@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC   -shared -Wl,-soname,libpibot_ipm_lib.so -o /home/lucifer/pi_ws/devel/.private/pibot/lib/libpibot_ipm_lib.so CMakeFiles/pibot_ipm_lib.dir/src/lane_ipm/lane_ipm.cpp.o 

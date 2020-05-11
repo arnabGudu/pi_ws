@@ -1,6 +1,0 @@
-[01m[K/home/lucifer/pi_ws/src/cam/src/cam.cpp:7:18:[m[K [01;31m[Kerror: [m[Kempty character constant
-   if (argv[i] == '')
-[01;32m[K                  ^[m[K
-make[2]: *** [CMakeFiles/cam_lib.dir/src/cam.cpp.o] Error 1
-make[1]: *** [CMakeFiles/cam_lib.dir/all] Error 2
-make: *** [all] Error 2

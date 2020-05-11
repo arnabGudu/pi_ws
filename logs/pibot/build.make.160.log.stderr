@@ -1,8 +1,0 @@
-[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:[m[K In constructor ‘[01m[Klane::lane(int, char**)[m[K’:
-[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:30:17:[m[K [01;31m[Kerror: [m[Kname lookup of ‘[01m[Ki[m[K’ changed for ISO ‘[01m[Kfor[m[K’ scoping [-fpermissive]
-   cap.open(argv[i]);
-[01;32m[K                 ^[m[K
-[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:30:17:[m[K [01;36m[Knote: [m[K(if you use ‘[01m[K-fpermissive[m[K’ G++ will accept your code)
-make[2]: *** [CMakeFiles/pibot_hl_lib.dir/src/lane_hl/lane_hl.cpp.o] Error 1
-make[1]: *** [CMakeFiles/pibot_hl_lib.dir/all] Error 2
-make: *** [all] Error 2

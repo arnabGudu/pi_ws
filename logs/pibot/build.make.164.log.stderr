@@ -1,6 +1,0 @@
-In file included from [01m[K/home/lucifer/pi_ws/src/pibot/src/pid/pid.cpp:1:0[m[K:
-[01m[K/home/lucifer/pi_ws/src/pibot/include/pid/pid.h:6:21:[m[K [01;31m[Kfatal error: [m[Kfstream.h: No such file or directory
-compilation terminated.
-make[2]: *** [CMakeFiles/pibot_lib.dir/src/pid/pid.cpp.o] Error 1
-make[1]: *** [CMakeFiles/pibot_lib.dir/all] Error 2
-make: *** [all] Error 2

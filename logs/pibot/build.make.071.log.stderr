@@ -1,7 +1,0 @@
-[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:[m[K In constructor ‘[01m[Klane::lane(int)[m[K’:
-[01m[K/home/lucifer/pi_ws/src/pibot/src/lane_hl/lane_hl.cpp:3:27:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Klane[m[K’ does not have any field named ‘[01m[Kcam[m[K’
- lane::lane(int th_flag) : cam()
-[01;32m[K                           ^[m[K
-make[2]: *** [CMakeFiles/pibot_hl_lib.dir/src/lane_hl/lane_hl.cpp.o] Error 1
-make[1]: *** [CMakeFiles/pibot_hl_lib.dir/all] Error 2
-make: *** [all] Error 2
